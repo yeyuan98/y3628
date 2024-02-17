@@ -1,0 +1,13 @@
+Package: y3628
+Title: Compilation of reusable bioinformatics analysis functions
+Version: 0.0.1
+Authors@R: 
+    person("Ye", "Yuan", , "yeyu@umich.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9641-9102"))
+Description: Functions that were initially written for various projects 
+    during my years at Michigan and later made reusable before of they may be 
+    of general interest (and useful for me later too). 3628 is a room number.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3

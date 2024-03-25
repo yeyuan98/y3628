@@ -5,9 +5,19 @@ Authors@R:
     person("Ye", "Yuan", , "yeyu@umich.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-9641-9102"))
 Description: Functions that were initially written for various projects 
-    during my years at Michigan and later made reusable before of they may be 
-    of general interest (and useful for me later too). 3628 is a room number.
+    during my years at Michigan and later made reusable because they may be 
+    of general interest and useful for me later too. 3628 is a room number.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+biocViews: CellBiology, Genetics
+Imports: 
+    dplyr,
+    GenomicRanges,
+    stringr,
+    SummarizedExperiment,
+    tibble,
+    VariantAnnotation
+Depends: 
+    R (>= 4.1)

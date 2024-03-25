@@ -1,0 +1,21 @@
+---
+title: "intron-properties"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{intron-properties}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(y3628)
+requireNamespace("TxDb.Dmelanogaster.UCSC.dm6.ensGene", quietly = TRUE)
+requireNamespace("BSgenome.Dmelanogaster.UCSC.dm6", quietly = TRUE)
+```

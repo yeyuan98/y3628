@@ -22,5 +22,5 @@ A character vector of 'confident' variant IDs.
 Get 'confident' variants for downstream analysis
 }
 \examples{
-Refer to `vignette("Adenine Base Editor analysis")`
+vignette("rABE-analysis")
 }

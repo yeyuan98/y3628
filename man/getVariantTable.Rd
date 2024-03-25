@@ -19,5 +19,5 @@ A tibble::tibble
 Return detailed variant information (mutation rate, counts for REF/ALT).
 }
 \examples{
-Refer to `vignette("Adenine Base Editor analysis")`
+vignette("rABE-analysis")
 }

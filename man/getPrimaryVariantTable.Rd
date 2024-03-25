@@ -17,6 +17,3 @@ A data.frame of counts for primary variants of each ID queried.
 \description{
 Get data frame of primary variants from a VCF file
 }
-\examples{
-Not applicable. Internal use only.
-}

@@ -16,6 +16,3 @@ A character(1) showing standard summary statistics (i.e.,
 \description{
 Format summary of a numeric vector
 }
-\examples{
-Not applicable. Internal use only.
-}

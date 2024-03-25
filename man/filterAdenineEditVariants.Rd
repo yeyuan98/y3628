@@ -26,5 +26,5 @@ base editing event.
 Filter variants to include only Adenine base editing
 }
 \examples{
-Refer to `vignette("Adenine Base Editor analysis")`
+vignette("rABE-analysis")
 }

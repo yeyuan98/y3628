@@ -7,7 +7,7 @@
 BranchPointScan(
   GRanges.intron,
   branchpoint.motif,
-  BSgenome = BSgenome.Dmelanogaster.UCSC.dm6::BSgenome.Dmelanogaster.UCSC.dm6,
+  BSgenome,
   logodds.threshold = 0.5
 )
 }

@@ -20,5 +20,5 @@ A tibble::tibble with columns: \itemize{
 Convert GRanges with assigned variants into a tibble
 }
 \examples{
-Refer to `vignette("Adenine Base Editor analysis")`
+vignette("rABE-analysis")
 }

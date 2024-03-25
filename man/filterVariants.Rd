@@ -21,5 +21,5 @@ Filtered merged variant table
 Filter a single merged variant table
 }
 \examples{
-Refer to `vignette("Adenine Base Editor analysis")`
+vignette("rABE-analysis")
 }

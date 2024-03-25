@@ -18,5 +18,5 @@ variant table of X \ Y (based on $variant_id)
 Set difference of two variant tables
 }
 \examples{
-Refer to `vignette("Adenine Base Editor analysis")`
+vignette("rABE-analysis")
 }

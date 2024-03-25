@@ -254,8 +254,7 @@ phastCons <-
 #' vignette("intron-properties")
 BranchPointScan <-
   function(
-    GRanges.intron, branchpoint.motif,
-    BSgenome = BSgenome.Dmelanogaster.UCSC.dm6::BSgenome.Dmelanogaster.UCSC.dm6,
+    GRanges.intron, branchpoint.motif, BSgenome,
     logodds.threshold = .5
   ){
 

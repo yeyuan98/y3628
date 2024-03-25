@@ -9,8 +9,6 @@
 #' @param variant_ids Identifiers to subset the VCF object
 #'
 #' @return A data.frame of counts for primary variants of each ID queried.
-#'
-#' @examples Not applicable. Internal use only.
 getPrimaryVariantTable = function(vcf, variant_ids){
   # Subset a VCF to get variants with variant_ids
   #   then wrangle the variant data into a data frame with following columns
@@ -47,8 +45,6 @@ getPrimaryVariantTable = function(vcf, variant_ids){
 #' @param stranded Boolean, whether to consider strand of the ranges
 #'
 #' @return GenomicRanges::GRanges with only A->G edits
-#'
-#' @examples Not applicable. Internal use only.
 pruneAdenineEditVariants = function(rangeWithVariants, stranded = TRUE){
   # Prune range$variant_ids to include variant_ids that are A->G edits
   # For the effect of `stranded`, refer to analysis$filterAdenineEditVariants
@@ -98,7 +94,8 @@ pruneAdenineEditVariants = function(rangeWithVariants, stranded = TRUE){
 #' @return Input `range` except adding a $variant_ids column
 #' @export
 #'
-#' @examples Refer to `vignette("Adenine Base Editor analysis")`
+#' @examples
+#' vignette("rABE-analysis")
 assignVariantIds = function(range, vcf, sep = ";"){
   # For EACH range, assign variants overlapping to it
   #   Returns GRanges range with an extra colData column `variants` of VCF ids.
@@ -144,7 +141,8 @@ assignVariantIds = function(range, vcf, sep = ";"){
 #' base editing event.
 #' @export
 #'
-#' @examples Refer to `vignette("Adenine Base Editor analysis")`
+#' @examples
+#' vignette("rABE-analysis")
 filterAdenineEditVariants = function(assignedRange,
                                      stranded = TRUE, pruning = TRUE){
   # Input GRanges must have variant_ids column, annotated by assignVariantIds
@@ -199,6 +197,7 @@ filterAdenineEditVariants = function(assignedRange,
 #' @export
 #'
 #' @examples
+#' vignette("rABE-analysis")
 getVariantTable = function(vcf, assignedRange){
   # Take variant ID from the GRanges and return a variant info table with columns:
   #   `variant_id` = unique variants that are found

@@ -23,5 +23,5 @@ $countALT, $mutatin.perc.
 Merge a list of variant tables into one table.
 }
 \examples{
-Refer to `vignette("Adenine Base Editor analysis")`
+vignette("rABE-analysis")
 }

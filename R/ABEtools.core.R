@@ -17,7 +17,6 @@
 #' }
 #' @details Variant type is extracted but NOT checked at all. You must make sure
 #' that only "A/G" and "T/C" are present as input.
-#' @examples Not applicable. Internal use only.
 variantID2GRanges = function(variant_ids){
   # Converts a variant ID character vector into a GRanges object
   #   mcol `type` will be "A/G" or "T/C" to reflect variant type
@@ -42,8 +41,6 @@ variantID2GRanges = function(variant_ids){
 #'
 #' @return A character(1) showing standard summary statistics (i.e.,
 #' 0/25/50/mean/75/100 quantiles).
-#'
-#' @examples Not applicable. Internal use only.
 prettyFormatSummary = function(nums){
   # Returns pretty formatted summary from given nums numeric vector
   sprintf("%.2f", summary(nums)) |>
@@ -63,7 +60,8 @@ prettyFormatSummary = function(nums){
 #' @return A character vector of 'confident' variant IDs.
 #' @export
 #'
-#' @examples Refer to `vignette("rABE-analysis")`
+#' @examples
+#' vignette("rABE-analysis")
 getConfidentVariantIds = function(
     variantTableList, print.stats = TRUE, min.occurence = 2 ){
   # Takes a list of variant tables and return a vector of variant IDs for downstream analysis
@@ -99,7 +97,8 @@ getConfidentVariantIds = function(
 #' }
 #' @export
 #'
-#' @examples Refer to `vignette("rABE-analysis")`
+#' @examples
+#' vignette("rABE-analysis")
 mergeVariants = function(variantTableList, variantIDsToKeep){
   # Takes a list of variant tables and return a single table with columns
   #   `variant_id`    character
@@ -125,7 +124,8 @@ mergeVariants = function(variantTableList, variantIDsToKeep){
 #' @return variant table of X \ Y (based on $variant_id)
 #' @export
 #'
-#' @examples Refer to `vignette("rABE-analysis")`
+#' @examples
+#' vignette("rABE-analysis")
 diffVariants = function(varTableX, varTableY){
   # Set difference based on `variant_id` matching X \ Y
 
@@ -148,7 +148,8 @@ diffVariants = function(varTableX, varTableY){
 #' @return Filtered merged variant table
 #' @export
 #'
-#' @examples Refer to `vignette("rABE-analysis")`
+#' @examples
+#' vignette("rABE-analysis")
 filterVariants = function(mergedVarTable, perc.limits, plot = TRUE){
   # Takes a merged variant table (i.e., with `variant_id` and `variant_data` columns)
   #   filter variants based on the following properties:
@@ -212,7 +213,8 @@ filterVariants = function(mergedVarTable, perc.limits, plot = TRUE){
 #' variants will only be assigned to "+" stranded ranges, and vice versa.
 #' However, you must make sure that only "A/G" and "T/C" variants are
 #' included in the input.
-#' @examples Refer to `vignette("rABE-analysis")`
+#' @examples
+#' vignette("rABE-analysis")
 assignToGRanges = function(variant_ids, targetGRanges, prune = TRUE){
   # For each range specified in targetGRanges,
   #   assign variants that resides in the range
@@ -269,7 +271,8 @@ assignToGRanges = function(variant_ids, targetGRanges, prune = TRUE){
 #' }
 #' @export
 #'
-#' @examples Refer to `vignette("rABE-analysis")`
+#' @examples
+#' vignette("rABE-analysis")
 getNameVarTable = function(assignedGRanges){
   # Take an "assigned GRanges" (i.e., GRanges with names and `variant_ids`)
   # Convert into a data frame with columns:

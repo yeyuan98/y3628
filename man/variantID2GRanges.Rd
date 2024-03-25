@@ -26,6 +26,3 @@ Convert A/G variant ID vector into GenomicRanges::GRanges
 Variant type is extracted but NOT checked at all. You must make sure
 that only "A/G" and "T/C" are present as input.
 }
-\examples{
-Not applicable. Internal use only.
-}

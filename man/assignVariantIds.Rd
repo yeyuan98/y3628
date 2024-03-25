@@ -20,5 +20,5 @@ Input \code{range} except adding a $variant_ids column
 Assign overlapping VCF variant IDs to a GRanges
 }
 \examples{
-Refer to `vignette("Adenine Base Editor analysis")`
+vignette("rABE-analysis")
 }

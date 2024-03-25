@@ -19,6 +19,3 @@ GenomicRanges::GRanges with only A->G edits
 \description{
 Prune a GenomicRanges containing variants to retain only A->G edits
 }
-\examples{
-Not applicable. Internal use only.
-}

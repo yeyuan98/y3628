@@ -27,5 +27,5 @@ However, you must make sure that only "A/G" and "T/C" variants are
 included in the input.
 }
 \examples{
-Refer to `vignette("Adenine Base Editor analysis")`
+vignette("rABE-analysis")
 }

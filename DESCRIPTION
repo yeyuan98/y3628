@@ -20,7 +20,9 @@ Imports:
     GenomicRanges,
     graphics,
     IRanges,
+    methods,
     readr,
+    rlang,
     rtracklayer,
     S4Vectors,
     stats,
@@ -29,7 +31,8 @@ Imports:
     tibble,
     universalmotif,
     utils,
-    VariantAnnotation
+    VariantAnnotation,
+    vctrs
 Depends: 
     R (>= 4.1)
 Suggests: 

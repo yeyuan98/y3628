@@ -1,43 +1,23 @@
 Package: y3628
-Title: Compilation of reusable bioinformatics analysis functions
+Title: Base package for the y3628 data analysis suite
 Version: 0.0.1
 Authors@R: 
     person("Ye", "Yuan", , "yeyu@umich.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-9641-9102"))
-Description: Functions that were initially written for various projects 
-    during my years at Michigan and later made reusable because they may be 
-    of general interest and useful for me later too. Functions 
-    are organized into different workflows as described in package vignettes.
+Description: Base functionalities used by other packages in the y3628 suite 
+    of data analysis tools. These were initially written for various projects 
+    during my years at Michigan.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 biocViews: CellBiology, Genetics
 Imports: 
-    Biostrings,
-    BSgenome,
-    dplyr,
-    GenomicRanges,
-    graphics,
-    IRanges,
     methods,
-    readr,
     rlang,
-    rtracklayer,
-    S4Vectors,
-    stats,
-    stringr,
-    SummarizedExperiment,
-    tibble,
-    universalmotif,
-    utils,
-    VariantAnnotation,
     vctrs
 Depends: 
     R (>= 4.1)
 Suggests: 
-    BSgenome.Dmelanogaster.UCSC.dm6,
-    knitr,
-    rmarkdown,
-    TxDb.Dmelanogaster.UCSC.dm6.ensGene
-VignetteBuilder: knitr
+    tibble,
+    datasets

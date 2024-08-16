@@ -1,6 +1,6 @@
 Package: y3628
 Title: Base package for the y3628 data analysis suite
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: 
     person("Ye", "Yuan", , "yeyu@umich.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-9641-9102"))
@@ -10,11 +10,14 @@ Description: Base functionalities used by other packages in the y3628 suite
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 biocViews: CellBiology, Genetics
 Imports: 
     methods,
+    readr,
+    readxl,
     rlang,
+    tools,
     vctrs
 Depends: 
     R (>= 4.1)

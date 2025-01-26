@@ -26,4 +26,7 @@ Customizable summary of data frame variables
 groupThenSummarize(mtcars, cyl, list(m=mean, s=sd), disp:wt)
 # Multiple group variable
 groupThenSummarize(mtcars, gvars(cyl,vs), list(m=mean, s=sd), disp:wt)
+#   cyl == 4 & vs == 0 group will have NA sd values.
+#   This is because there is only one row in this group.
+mtcars[mtcars$cyl == 4 & mtcars$vs == 0,]
 }

@@ -1,6 +1,6 @@
 Package: y3628
 Title: Base package for the y3628 data analysis suite
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: 
     person("Ye", "Yuan", , "yeyu@umich.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-9641-9102"))
